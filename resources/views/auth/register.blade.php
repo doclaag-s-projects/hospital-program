@@ -48,7 +48,7 @@
                     class="border p-3 w-full rounded-lg @error('username')
                         border-red-500
                     @enderror"
-                    value="{{ old('name') }}"
+                    value="{{ old('username') }}"
                 />
 
                 @error('username')
@@ -72,7 +72,7 @@
                     class="border p-3 w-full rounded-lg @error('email')
                         border-red-500
                     @enderror"
-                    value="{{ old('name') }}"
+                    value="{{ old('email') }}"
                 />
 
                 @error('email')

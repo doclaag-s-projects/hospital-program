@@ -12,7 +12,7 @@
         <header class="p-5 border-b bg-white shadow">
             <div class="container mx-auto flex justify-between items-center">
                 <h1 class="text-3xl font-black">
-                    <a href="/">Servicio Inmobiliario</a>
+                    <a href="/">Programa Hospitalario</a>
                 </h1>
 
 
@@ -50,7 +50,7 @@
         <footer class="mt-10 text-center p-5 text-gray-500 font-bold uppercase">
             <div class="container mx-auto p-5">
                 <p class="text-center text-gray-500">
-                    &copy; {{ date('Y') }} Luis Alonzo
+                    &copy; {{ date('Y') }} Programa Hospitalario
                 </p>
             </div>
         </footer>
