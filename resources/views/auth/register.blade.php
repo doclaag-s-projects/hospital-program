@@ -82,6 +82,26 @@
                 @enderror
             </div>
 
+            {{-- Role --}}
+            <div class="mb-5">
+                <label for="role" class="mb-2 block uppercase text-gray-500 font-bold">
+                   Tipo de Usuario
+                </label>
+                <select class="form-select" id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="doctor">Médico</option>
+                    <option value="nurse">Enfermero/a</option>
+                    <option value="secretary">Secretario/a</option>
+                    <option value="patient">Paciente</option>
+                </select>
+
+                @error('role')
+                    <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2">
+                        {{ $message }}
+                    </p>
+                @enderror
+            </div>
+
             {{-- Password --}}
             <div class="mb-5">
                 <label for="password" class="mb-2 block uppercase text-gray-500 font-bold">
