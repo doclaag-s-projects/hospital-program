@@ -88,11 +88,10 @@
                    Tipo de Usuario
                 </label>
                 <select class="form-select" id="role" name="role">
-                    <option value="admin">Admin</option>
-                    <option value="doctor">Médico</option>
-                    <option value="nurse">Enfermero/a</option>
-                    <option value="secretary">Secretario/a</option>
-                    <option value="patient">Paciente</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Medico">Médico</option>
+                    <option value="Enfermero(a)">Enfermero/a</option>
+                    <option value="Secretario(a)">Secretario/a</option>
                 </select>
 
                 @error('role')

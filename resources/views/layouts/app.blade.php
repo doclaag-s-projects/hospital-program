@@ -19,13 +19,14 @@
                 @auth
                 <nav class="flex gap-2 items-center">
                     <a class="font-bold text-gray-600" href="{{ route('dashboard', ['user' => auth()->user()->username]) }}">Hola: <span class="font-normal">{{ auth()->user()->username }}</span></a>
-                    <a class="font-bold uppercase text-gray-600" href="{{ route('register') }}">Crear Cuenta</a>
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
+                    <a class="font-bold text-gray-600" >Rol: <span class="font-normal">{{auth()->user()->role}}</span></a>
+                    @if(auth()->user()->role === 'Admin')
+                        <a class="font-bold uppercase text-gray-600" href="{{ route('register') }}">Crear Cuenta</a>
+                    @endif
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
                             <button type="submit" class="font-bold uppercase text-gray-600" >Cerrar Sesión</button>
                         </form>
-
-
                     </nav>
                 @endauth
 
